@@ -14,7 +14,9 @@ Notes:	 Hand coded for Udemy.com
    Layout
    -------------------------------------- */
    body{
-     background-color: #F0F8FF;
+     background-color: #F5F5F5;
+     /*background: url('../../images/site-backgrounds-june (1).jpg');
+     background-size: cover;*/
    }
 
    #features
@@ -32,6 +34,50 @@ Notes:	 Hand coded for Udemy.com
    {
       margin-right: 20px;
    }
+   #submitButton{
+      margin-top: 15px;
+   }
+   .thumbnails
+   {
+     margin: 20px 0;
+   }
+   .thumbnail
+   {
+     position: relative;
+   }
+
+   .thumbnail .label
+   {
+      top: -10px;
+      right: -10px;
+      position: absolute;
+      font-size: 22px;
+   }
+   .thumbnail sup
+   {
+      font-size: 14px;
+   }
+   footer{
+     background-color: #333;
+     color:#eee;
+     font-size: 10px;
+   }
+   ul.unstyled
+   {
+     list-style: none;
+     padding-left: 0px;
+   }
+   #features .panel,#features .panel-heading
+   {
+     background-color: #F5F5F5;
+     border: none;
+   }
+   .panel{
+     -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0);
+   }
+
+
+
 
 
 
@@ -44,9 +90,12 @@ Notes:	 Hand coded for Udemy.com
 /* --------------------------------------
    Navbar
    -------------------------------------- */
+   .navbar-brand{
+     z-index: 99999;
+   }
    #searchInput
    {
-     width:200px;
+     width:250px;
    }
    .navbar-brand
    {
@@ -57,30 +106,77 @@ Notes:	 Hand coded for Udemy.com
    }
    #header_color
    {
-     background-color: #E6E6FA;
+     background-color: #709ea2;
    }
+  .navbar-form button
+  {
+     background-color: rgb(190, 42, 119);
+     width:50px;
+  }
+  .nav-collapse
+  {
+    margin-top: 5px;
+  }
+  .navbar-nav li a{
+    color:black;
+    font-family: 'Helvetica Neue,Helvetica,Arial';
+    font-size: 20px;
+  }
+
 
 
 /* --------------------------------------
    Carousel
    -------------------------------------- */
+   .carousel-inner .item h2
+   {
+      color: white;
+      font-family: 'MV Boli';
+      font-size: 40px;
+      z-index: 99999;
+   }
+   .carousel-inner .item p
+   {
+      color: white;
+      font-family: 'MV Boli';
+      font-size: 20px;
+      z-index: 99999;
+   }
+   .carousel-inner .item .carousel-caption
+   {
+     z-index: 99999;
+   }
+   .carousel .carousel-indicators, .carousel .left,.carousel .right
+   {
+     z-index: 999999;
+   }
+
    #myCarousel
    {
-     margin-top: 65px;
+     margin-top: 59px;
    }
    #myCarousel .item
    {
      height: 550px;
      background-color: #F0F8FF;
+     /*position: relative;*/
+   }
+   .slide .back-drop{
+     background: black;
+     width: 100%;
+     height: 100%;
+     opacity:0.1;
+    position: absolute;
+    z-index: 9999;
    }
   #slide1
   {
-    background: url('../../images/28062016-main-eggs (1).jpg') top center no-repeat;
+    background: url('../../images/28062016-eating-pregnancy-main (1).jpg') top center no-repeat;
     background-size: cover;
   }
   #slide2
   {
-    background: url('../../images/28062016-eating-pregnancy-main (1).jpg') top center no-repeat;
+    background: url('../../images/29062016-cookies.jpg') top center no-repeat;
     background-size: cover;
   }
   #slide3
@@ -93,12 +189,8 @@ Notes:	 Hand coded for Udemy.com
     background: url('../../images/26062016-infused-spirits.jpg') top center no-repeat;
     background-size: cover;
   }
+
   #slide5
-  {
-    background: url('../../images/25062016-barbecues.jpg') top center no-repeat;
-    background-size: cover;
-  }
-  #slide6
   {
     background: url('../../images/24062016-cheesecake (1).jpg') top center no-repeat;
     background-size: cover;
@@ -130,6 +222,15 @@ body
   margin-top: 20px;
   display: none;
 }
+.well {
+  color:rgb(51, 102, 0);
+  font-family: 'SerifaBT-Light,Georgia,Times New Roman,Times,serif';
+}
+.well small
+{
+  color: #be054d;
+  font-family: 'SerifaBT-Light,Georgia,Times New Roman,Times,serif';
+}
 
 
 /* --------------------------------------
@@ -138,19 +239,30 @@ body
 
 /* Portrait & landscape phone */
 @media (max-width: 480px) {
+
+  .thumbnail .label
+  {
+     font-size: 14px;
+  }
+  .thumbnail sup
+  {
+     font-size: 10px;
+  }
+
+
   #myCarousel .item
   {
-    height: 100px;
+    height: 300px;
     background-color: #F0F8FF;
   }
  #slide1
  {
-   background: url('../../images/28062016-main-eggs (1).jpg') top center no-repeat;
+   background: url('../../images/28062016-eating-pregnancy-main (1).jpg') top center no-repeat;
    background-size: cover;
  }
  #slide2
  {
-   background: url('../../images/28062016-eating-pregnancy-main (1).jpg') top center no-repeat;
+   background: url('../../images/29062016-cookies.jpg') top center no-repeat;
    background-size: cover;
  }
  #slide3
@@ -164,11 +276,6 @@ body
    background-size: cover;
  }
  #slide5
- {
-   background: url('../../images/25062016-barbecues.jpg') top center no-repeat;
-   background-size: cover;
- }
- #slide6
  {
    background: url('../../images/24062016-cheesecake (1).jpg') top center no-repeat;
    background-size: cover;
@@ -183,6 +290,9 @@ body
 
 /* Large desktop */
 @media (min-width: 1200px) {
+  .thumbnail img{
+    width:100%;
+  }
   #myCarousel .item
   {
     height: 550px;
@@ -190,12 +300,12 @@ body
   }
  #slide1
  {
-   background: url('../../images/28062016-main-eggs (1).jpg') top center no-repeat;
+   background: url('../../images/28062016-eating-pregnancy-main (1).jpg') top center no-repeat;
    background-size: cover;
  }
  #slide2
  {
-   background: url('../../images/28062016-eating-pregnancy-main (1).jpg') top center no-repeat;
+   background: url('../../images/29062016-cookies.jpg') top center no-repeat;
    background-size: cover;
  }
  #slide3
@@ -208,12 +318,8 @@ body
    background: url('../../images/26062016-infused-spirits.jpg') top center no-repeat;
    background-size: cover;
  }
+
  #slide5
- {
-   background: url('../../images/25062016-barbecues.jpg') top center no-repeat;
-   background-size: cover;
- }
- #slide6
  {
    background: url('../../images/24062016-cheesecake (1).jpg') top center no-repeat;
    background-size: cover;
