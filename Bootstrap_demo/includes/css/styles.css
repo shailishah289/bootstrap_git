@@ -18,11 +18,36 @@ Notes:	 Hand coded for Udemy.com
      /*background: url('../../images/site-backgrounds-june (1).jpg');
      background-size: cover;*/
    }
+   .thumbnail img{
+     width:100%;
+     height: 400px;
+   }
+   footer img{
+     height:50px;
+     width: 70px;
+     padding-right: 15px;
+   }
+   footer a
+   {
+      font-family:'SerifaBT-Light,Georgia,Times New Roman,Times,serif';
+      font-size: 15px;
+   }
+   footer p{
+     font-family:'SerifaBT-Light,Georgia,Times New Roman,Times,serif';
+     font-size: 14px;
+   }
 
    #features
    {
      text-align: center;
      margin-top: 20px;
+   }
+   #features img:hover
+   {
+     transform: rotate(20deg);
+   }
+   #tab3 img:hover{
+     transform: scale(0.7);
    }
    #ourShows {
      margin-top: 30px;
@@ -75,6 +100,50 @@ Notes:	 Hand coded for Udemy.com
    .panel{
      -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0);
    }
+   #featuresHeading h2
+   {
+      color:#333;
+      font: normal 30px;
+      font-family: 'SerifaBT-Light,Georgia,Times New Roman,Times,serif';
+      line-height: 3.125rem;
+   }
+   #features .panel-heading h3,#tab1 h4,#tab3 h4,#tab2 h4,#moreCourses h3
+   {
+     font-family: 'SerifaBT-Light,Georgia,Times New Roman,Times,serif';
+     font-size:20px;
+   }
+   #features .panel p,#tab1 p,#tab3 p,#tab2 p,#moreCourses p{
+     color:rgb(51, 51, 51);
+     font-family: 'Helvetica Neue,Helvetica,Arial';
+     font-size:15px;
+     line-height:22.5px;
+   }
+   #features .panel a,#tab3 p a,#just_open p,#moreCourses p a{
+     color:rgb(68, 125, 117);
+     font-family: 'Georgia,Times New Roman,Times,serif';
+     font-size:15px;
+   }
+   #moreCourses .btn{
+     font-size:15px;
+     color: white;
+   }
+   #link_more
+   {
+     margin-top: 30px;
+   }
+   #tab3 img
+   {
+     width: 100%;
+     height: 100%;
+   }
+   #link_to_align
+   {
+     margin-top: 26px;
+   }
+   #tab3 p a{
+     padding-left: 0px;
+   }
+
 
 
 
@@ -84,7 +153,11 @@ Notes:	 Hand coded for Udemy.com
 /* --------------------------------------
    Typography
    -------------------------------------- */
-
+  #moreInfo h3,#just_open h3
+  {
+    font-family:'SerifaBT-Light,Georgia,Times New Roman,Times,serif';
+    font-size: 25px;
+  }
 
 
 /* --------------------------------------
@@ -144,7 +217,7 @@ Notes:	 Hand coded for Udemy.com
    }
    .carousel-inner .item .carousel-caption
    {
-     z-index: 99999;
+     z-index: 999;
    }
    .carousel .carousel-indicators, .carousel .left,.carousel .right
    {
@@ -231,6 +304,11 @@ body
   color: #be054d;
   font-family: 'SerifaBT-Light,Georgia,Times New Roman,Times,serif';
 }
+/*#tab4{
+background-image: url(//www.bbcgoodfood.com/sites/all/themes/bbcw_goodfood/images/inline/bg-thatched.png?vf80d90650bdc318e42a7afb2f715087a);
+background-repeat: repeat;
+}*/
+
 
 
 /* --------------------------------------
